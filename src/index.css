@@ -2,41 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Enfros Solar Design System - Inspired by sun and nature
+All colors MUST be HSL. */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Solar-inspired color palette */
+    --background: 45 29% 97%;
+    --foreground: 24 45% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 24 45% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 24 45% 8%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Solar Gold/Yellow */
+    --primary: 45 93% 58%;
+    --primary-foreground: 24 45% 8%;
+    --primary-glow: 48 100% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Eco Green */
+    --secondary: 158 64% 52%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 150 100% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Supporting colors */
+    --muted: 45 29% 95%;
+    --muted-foreground: 25 25% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 158 64% 52%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 29% 88%;
+    --input: 0 0% 100%;
+    --ring: 45 93% 58%;
 
-    --radius: 0.5rem;
+    /* Solar gradients */
+    --gradient-solar: linear-gradient(135deg, hsl(48 100% 70%), hsl(38 92% 62%), hsl(25 95% 53%));
+    --gradient-eco: linear-gradient(135deg, hsl(158 64% 52%), hsl(142 76% 36%));
+    --gradient-sunset: linear-gradient(180deg, hsl(48 100% 70%), hsl(25 95% 53%));
+    --gradient-hero: linear-gradient(135deg, hsl(45 93% 58% / 0.1), hsl(158 64% 52% / 0.05));
+    
+    /* Enhanced shadows with solar glow */
+    --shadow-solar: 0 10px 40px -10px hsl(45 93% 58% / 0.3);
+    --shadow-eco: 0 10px 40px -10px hsl(158 64% 52% / 0.3);
+    --shadow-elegant: 0 20px 60px -10px hsl(24 45% 8% / 0.1);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +76,44 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode with warm solar tones */
+    --background: 24 45% 8%;
+    --foreground: 45 29% 97%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 30% 12%;
+    --card-foreground: 45 29% 97%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 30% 12%;
+    --popover-foreground: 45 29% 97%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Primary: Bright Solar Gold */
+    --primary: 48 100% 70%;
+    --primary-foreground: 24 45% 8%;
+    --primary-glow: 45 93% 58%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary: Bright Eco Green */
+    --secondary: 150 100% 45%;
+    --secondary-foreground: 24 45% 8%;
+    --secondary-glow: 158 64% 52%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 30% 15%;
+    --muted-foreground: 45 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 150 100% 45%;
+    --accent-foreground: 24 45% 8%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 45 29% 97%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 25 30% 18%;
+    --input: 25 30% 15%;
+    --ring: 48 100% 70%;
+
+    /* Dark mode gradients */
+    --gradient-solar: linear-gradient(135deg, hsl(48 100% 70%), hsl(38 92% 50%), hsl(25 95% 40%));
+    --gradient-eco: linear-gradient(135deg, hsl(150 100% 45%), hsl(142 76% 30%));
+    --gradient-sunset: linear-gradient(180deg, hsl(48 100% 70%), hsl(25 95% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(48 100% 70% / 0.1), hsl(150 100% 45% / 0.05));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +131,85 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Solar-themed animations */
+  @keyframes solar-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.5); 
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.8), 0 0 60px hsl(var(--primary) / 0.4); 
+    }
+  }
+
+  @keyframes eco-pulse {
+    0%, 100% { 
+      transform: scale(1); 
+      opacity: 1; 
+    }
+    50% { 
+      transform: scale(1.05); 
+      opacity: 0.9; 
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Utility classes for solar theme */
+  .solar-glow {
+    animation: solar-glow 3s ease-in-out infinite;
+  }
+
+  .eco-pulse {
+    animation: eco-pulse 2s ease-in-out infinite;
+  }
+
+  .fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  /* Gradient text effects */
+  .gradient-text-solar {
+    background: var(--gradient-solar);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-eco {
+    background: var(--gradient-eco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--gradient-solar);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-eco);
   }
 }

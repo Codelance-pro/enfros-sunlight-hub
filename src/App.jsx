@@ -19,7 +19,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/enfros-sunlight-hub">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

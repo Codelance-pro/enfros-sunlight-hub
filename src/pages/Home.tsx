@@ -50,7 +50,7 @@ const Home = () => {
             </Badge>
             
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              <span className="gradient-text-solar">ENFROS</span> India
+              <span className="gradient-text-solar">dribble</span> India
             </h1>
             
             <p className="text-2xl md:text-3xl font-semibold gradient-text-eco">
@@ -108,7 +108,7 @@ const Home = () => {
             <div className="space-y-6 fade-in-up">
               <div className="space-y-2">
                 <Badge variant="outline" className="text-secondary border-secondary">
-                  About Enfros
+                  About dribble
                 </Badge>
                 <h2 className="text-4xl font-bold gradient-text-solar">
                   Powering India's Solar Future
@@ -116,7 +116,7 @@ const Home = () => {
               </div>
               
               <p className="text-lg text-muted-foreground">
-                Enfros was established in 2012 in Chennai, Tamil Nadu, with a vision to develop 
+                dribble was established in 2012 in Chennai, Tamil Nadu, with a vision to develop 
                 solar as a sustainable energy alternative in India. Our energy solutions are 
                 viable both in the near term and long term, providing maximum energy efficiency.
               </p>
@@ -175,7 +175,7 @@ const Home = () => {
             </Badge>
             <h2 className="text-4xl font-bold mb-4 gradient-text-solar">What We Do</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              ENFROS provides end-to-end services to design the most suitable and optimal solar solution for your needs.
+              dribble provides end-to-end services to design the most suitable and optimal solar solution for your needs.
             </p>
           </div>
 

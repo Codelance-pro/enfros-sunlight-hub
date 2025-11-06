@@ -70,7 +70,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Addresses", 
-      details: ["info@enfrosindia.com", "projects@enfrosindia.com"],
+      details: ["info@dribbleindia.com", "projects@dribbleindia.com"],
       color: "text-primary"
     },
     {
@@ -112,7 +112,7 @@ const Contact = () => {
               Get In Touch
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text-solar">
-              Contact Enfros Solar
+              Contact dribble Solar
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Ready to start your solar journey? Our team of experts is here to help you 
@@ -307,7 +307,7 @@ const Contact = () => {
               <div className="aspect-video bg-gradient-hero flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">Enfros India</h3>
+                  <h3 className="text-2xl font-bold mb-2">dribble India</h3>
                   <p className="text-muted-foreground">Chennai, Tamil Nadu, India</p>
                   <Button variant="eco" size="sm" className="mt-4">
                     Get Directions
@@ -324,7 +324,7 @@ const Contact = () => {
         <div className="container mx-auto px-4 text-center fade-in-up">
           <h2 className="text-3xl font-bold mb-4">Ready to Go Solar?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Take the first step towards energy independence with Enfros Solar.
+            Take the first step towards energy independence with dribble Solar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" className="shadow-elegant">

@@ -18,7 +18,7 @@ const About = () => {
     {
       icon: Award,
       title: "Our Values",
-      description: "Quality, sustainability, innovation, and customer satisfaction drive everything we do at Enfros.",
+      description: "Quality, sustainability, innovation, and customer satisfaction drive everything we do at dribble.",
     },
   ];
 
@@ -47,7 +47,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto fade-in-up">
             <Badge variant="outline" className="text-secondary border-secondary mb-6">
-              About Enfros India
+              About dribble India
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text-solar">
               Pioneering Solar Excellence Since 2012
@@ -82,7 +82,7 @@ const About = () => {
             <div className="space-y-6 fade-in-up">
               <h2 className="text-4xl font-bold gradient-text-solar">Our Story</h2>
               <p className="text-lg text-muted-foreground">
-                Enfros was set up in 2012 in India with our corporate office in Chennai, Tamil Nadu, 
+                dribble was set up in 2012 in India with our corporate office in Chennai, Tamil Nadu, 
                 with a focus on developing Solar as sustainable energy alternative in India. Our energy 
                 solutions are viable both in the near term and over the longer term providing maximum energy.
               </p>

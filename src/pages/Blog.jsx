@@ -9,7 +9,7 @@ const Blog = () => {
     id: 1,
     title: "Solar Energy Trends in India 2024: What's Driving the Growth",
     excerpt: "India's solar market is experiencing unprecedented growth. Explore the key factors driving adoption, government policies, and emerging technologies shaping the future of solar energy in India.",
-    author: "Enfros Team",
+    author: "dribble Team",
     date: "March 15, 2024",
     readTime: "8 min read",
     category: "Industry Insights",
@@ -42,7 +42,7 @@ const Blog = () => {
       id: 4,
       title: "Commercial Solar ROI: Case Study of 50MW Industrial Project",
       excerpt: "Detailed analysis of our recent 50MW industrial solar installation - investment, returns, and key learnings for large-scale commercial solar.",
-      author: "Enfros Engineering",
+      author: "dribble Engineering",
       date: "March 5, 2024",
       readTime: "10 min read",
       category: "Case Study",
@@ -133,7 +133,7 @@ const Blog = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto fade-in-up">
             <Badge variant="outline" className="text-primary border-primary mb-6">
-              Enfros Solar Blog
+              dribble Solar Blog
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text-solar">
               Solar Energy Insights

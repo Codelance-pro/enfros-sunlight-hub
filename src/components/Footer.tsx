@@ -14,7 +14,7 @@ const Footer = () => {
                 <Sun className="h-5 w-5 text-primary-foreground" />
               </div>
               <div>
-                <span className="text-lg font-bold gradient-text-solar">ENFROS</span>
+                <span className="text-lg font-bold gradient-text-solar">dribble</span>
                 <p className="text-xs text-muted-foreground">Solar Solutions</p>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>info@enfrosindia.com</span>
+                <span>info@dribbleindia.com</span>
               </div>
             </div>
 
@@ -86,7 +86,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Enfros India. All rights reserved. | Powering sustainable futures with solar energy.
+            © 2024 dribble India. All rights reserved. | Powering sustainable futures with solar energy.
           </p>
         </div>
       </div>

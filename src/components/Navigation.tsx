@@ -28,7 +28,7 @@ const Navigation = () => {
               <Sun className="h-6 w-6 text-primary-foreground" />
             </div>
             <div className="hidden sm:block">
-              <span className="text-xl font-bold gradient-text-solar">ENFROS</span>
+              <span className="text-xl font-bold gradient-text-solar">dribble</span>
               <p className="text-xs text-muted-foreground">Solar Solutions</p>
             </div>
           </Link>
